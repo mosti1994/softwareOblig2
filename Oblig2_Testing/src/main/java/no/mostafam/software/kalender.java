@@ -3,16 +3,30 @@ package no.mostafam.software;
 import java.util.Scanner;
 
 public class kalender {
-    public static void main(String[] args) {
+    public static boolean main(String[] args) {
+        //intialize the object
         Scanner scanner = new Scanner(System.in);
-        System.out.println("enter the date: ");
 
-        //denne metoden leser nummeret
-        int number = scanner.nextInt();
+        System.out.println("enter year: ");
+
+        int scannYear = scanner.nextInt();
+
 
         //her stenger vi scanner funksjonen etter lesing
-        scanner.close();
-        System.out.println("oki");
+        int year = scannYear;
+
+        if (year % 400 == 0) {
+            return true;
+        } else if (year % 4 == 0 && year % 100 == 0) {
+        } else if (year % 4 != 0) {
+            return true;
+        } else if (year % 100 == 0 && year % 400 == 0) {
+            return true;
+        } else {
+            return true;
+        }
+
     }
+
 
 }
