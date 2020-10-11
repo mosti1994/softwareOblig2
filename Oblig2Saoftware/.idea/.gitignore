@@ -1,0 +1,15 @@
+# Default ignored files
+/workspace.xml
+# Default ignored files
+#bestemmer hva som ikke skal deles med pc.
+#
+#disse filene vil ikke overføres til git siden de er viktige for nettsiden vårt.
+#ligger allerede inn i idea men skal også ignoreres.
+/workspace.xml
+#datasource local storage ignored files
+#project settings for the project are stored inside her.
+#forteller hvordan prosjektet henger sammen.
+.idea/datasources/
+/datasources.local.xml
+#editor_based HTTP client requests
+/httpRequests/
