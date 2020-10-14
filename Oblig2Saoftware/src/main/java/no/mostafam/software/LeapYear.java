@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 
             Scanner scanner = new Scanner(System.in);
-            Year formattingCode = new Year();
+            Year newYear = new Year();
 
             System.out.println("enter the year to check: ");
 
@@ -20,10 +20,8 @@ import java.util.Scanner;
 
             //her stenger vi scanner funksjonen etter lesing
             scanner.close();
-            System.out.println(formattingCode);
+            System.out.println("if true it is leap year if false it isn't:  " + (newYear.isLeapYear(year)));
 
 
         }
     }
-
-
